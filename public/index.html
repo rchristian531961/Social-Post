@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio/Resume">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ray Christian">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Form</title>
+    <link rel="stylesheet" href="styles/index-stylesheet.css">
+    <script src="https://kit.fontawesome.com/af0f404c8e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <!--Logo here-->
+        <div class="nav-left">
+            <img src="photos/logo-test.jpg" class="logo">
+
+             <!--Search Navigation tags-->
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house fa-xl"></i></a></li><!--Home-->
+            <li><a href="#"><i class="fa-solid fa-message fa-xl"></i></a></li><!--Message-->
+            <li><a href="post-form.html"><i class="fa-solid fa-display fa-xl"></i></a></li><!--Post Form-->
+        </ul>
+
+        </div>
+
+        <!--Profile Pic & Search Bar-->
+        <div class="nav-right">
+
+            <div class="search-box">
+                <input type="text" placeholder="search">
+            </div>
+
+            <div class="nav-user-icon-online">
+                <!--image here-->
+            </div>
+
+        </div>
+    </nav>
+
+    <!--Full Container below Navigation Page-->
+    <div class="container">
+
+        <!----------------------------------Left-Sidebar--------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="photos/news.png">Latest News</a>
+                    <a href="#"><img src="photos/friends.png">Friends</a>
+                    <a href="#"><img src="photos/group.png">Group</a>
+                    <a href="#"><img src="photos/marketplace.png">Marketplace</a>
+                    <a href="#">See More</a>
+            </div>
+
+        </div>
+
+        <!---------------------------------main-content------------------->
+        <div class="main-content">
+            <div class="write-post-container">
+                <form id="new-post-form">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" value="Name Here"><br>
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title" value="title Here"><br>
+                    <label for="text">Content:</label><br>
+                    <textarea id="text"></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        
+            <!--Template for Information posted-->
+            <template id="post-template">
+                <div class="post">
+                    <div class="post-body">
+                        <div class="post-name">RJ</div>
+                        <div class="post-title">Title</div>
+                        <div class="post-text">Text</div>
+                    </div>
+                </div>
+            </template>
+            
+            <div class="post-list-container">
+                <div id="post-list"></div>
+              </div>
+
+        </div>
+
+        <!---------------------------------right-sidebar------------------>
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisements</h4>
+                <a href="#">Close</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/posts.js"></script>
+
+</body>
+
+</html>
